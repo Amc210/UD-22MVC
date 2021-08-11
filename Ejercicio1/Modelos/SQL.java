@@ -70,7 +70,6 @@ public class SQL {
 			PreparedStatement consulta = conexion.prepareStatement(sql);
 			consulta.setInt(1, Integer.parseInt(query));
 			ResultSet res = consulta.executeQuery();
-			System.out.println("uwu");
 			while (res.next()) {
 				resultado += res.getString("id") + " ";
 				resultado += res.getString("nombre") + " ";
